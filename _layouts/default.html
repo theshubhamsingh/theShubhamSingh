@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <!-- Link to your CSS relative to the baseurl -->
+  <link rel="stylesheet" href="{{ site.baseurl }}/styles.css">
+</head>
+<body>
+
+  <!-- Ambient Mesh Background -->
+  <div class="bg" aria-hidden="true">
+    <div class="blob b1"></div>
+    <div class="blob b2"></div>
+  </div>
+
+  <!-- Institutional Top Navigation -->
+  <nav class="glass-nav">
+    <a href="{{ site.baseurl }}/" class="nav-logo">
+      <img src="https://lh7-us.googleusercontent.com/sitesv-images-rt/AMxu72viSC2ivuLzJFUtcQY_iuvJGQdp27XCDwUuUcprM3mEyfmXwDjiRIeL0ezsE1Rxh6A_YFSVMk_LWc89ljkDKweRWswsKOli2I6l2Bs6qfARjkuRWqlVRIUr8j8AbXIJPHr3GSecpj_Rig5J6YJmWufTDmbP_U_t9Mgd7IvfJNRQGtrkSbQdXgMKifW7rHU=w16383" alt="Doctor Sosology Logo">
+      Doctor Sosology
+    </a>
+    <ul class="nav-links">
+      <li><a href="{{ site.baseurl }}/home" class="active">Home</a></li>
+      <li><a href="{{ site.baseurl }}/research" class="active">Research</a></li>
+      <li><a href="{{ site.baseurl }}/teaching" class="active">Teaching</a></li>
+      <li><a href="{{ site.baseurl }}/blogs" class="active">Blogs</a></li>
+      <li><a href="{{ site.baseurl }}/about" class="active">About</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <!-- THIS IS WHERE YOUR MARKDOWN CONTENT WILL APPEAR -->
+    {{ content }}
+  </main>
+
+  <!-- Institutional Footer -->
+  <footer>
+    <div class="footer-content">
+      <div>
+        <div class="footer-huge" style="font-size: clamp(2rem, 4vw, 3rem);">
+          <a href="https://www.doctorsosology.com" target="_blank">Doctor 🎓 Sosology</a>
+        </div>
+        <p style="color: var(--text-muted); max-width: 300px; margin-bottom: 1rem;">
+          Made with ❤️ in India
+        </p>
+        <a href="https://www.doctorsosology.com/payment" target="_blank" class="btn-apply">Support with 💵 &rarr;</a>
+      </div>
+      
+      <div class="footer-links">
+        <h3>Contact Us</h3>
+        <ul style="color: var(--text-muted); line-height: 1.6;">
+          <li style="color: var(--text-main); font-weight: 600;">Shubham Singh</li>
+          <li>Faculty, DACE</li>
+          <li>Central University Punjab</li>
+          <li><a href="mailto:contact@doctorsosology.com">contact@doctorsosology.com</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div style="text-align: center; padding-top: 3rem; margin-top: 3rem; border-top: 1px solid var(--glass-border); color: var(--text-muted); font-size: 0.85rem;">
+      <p>Copyright &copy; 2026, Doctor Sosology</p>
+    </div>
+  </footer>
+
+  <script src="{{ site.baseurl }}/script.js"></script>
+</body>
+</html>
