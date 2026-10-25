@@ -1,0 +1,7 @@
+title: Doctor Sosology
+description: A web-based portfolio of Shubham Singh
+url: "http://code.doctorsosology.com"
+baseurl: "/theshubhamsingh"
+
+# Notice we have REMOVED the 'theme: jekyll-theme-cayman' line.
+# This prevents GitHub from overwriting your custom glass design.
